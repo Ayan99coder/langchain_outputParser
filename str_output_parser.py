@@ -12,3 +12,4 @@ template2 =  PromptTemplate(template='give me 5 points on this {text}',input_var
 chain = template1|llm|parsers|template2|llm|parsers
 output =chain.invoke({'topic':'black hole'})
 print(output)
+
